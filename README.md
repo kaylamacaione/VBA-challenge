@@ -64,7 +64,7 @@ End If
 If Range("J" & Summary_Table_Row).Value >= 0 Then
 Range("J" & Summary_Table_Row).Interior.ColorIndex = 4
 
-ElseIf Range("J" & Summary_Table_Row).Value <= 0 Then
+ElseIf Range("J" & Summary_Table_Row).Value < 0 Then
 Range("J" & Summary_Table_Row).Interior.ColorIndex = 3
 
 Else
